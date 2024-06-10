@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
-
+import './index.css'
 //imported  pages]
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home.jsx';
@@ -17,10 +16,12 @@ import Authors from './pages/Authors.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import AuthorPost from './pages/AuthorPost.jsx'
 import EditProfile from './pages/EditProfile.jsx';
+
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout/>,
+    // If there is any error this is rendered
     errorElement: <ErrorPage/>,
     children:[
       {index:true, element: <Home/>},
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       {path:"posts/users/:id", element: <AuthorPost/>},
       {path:"myposts/:id'", element: <Dashboard/>},
       {path:"posts/:id/edit'", element: <EditProfile/>},
+      //Goes to any other route which we don't have
       {path:"*", element: <ErrorPage/>}
     ]
   }
