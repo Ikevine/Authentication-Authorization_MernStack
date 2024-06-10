@@ -25,16 +25,16 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children:[
       {index:true, element: <Home/>},
-      {path:"posts/:id", element: <Postdetails/>},
-      {path:"login", element: <Login/>},
-      {path:"register", element: <Register/>},
-      {path:"profile/:id", element: <UserProfile/>},
-      {path:"authors", element: <Authors/>},
-      {path:"create", element: <CreatePost/>},
-      {path:"posts/categories/:category", element: <CategoryPosts/>},
-      {path:"posts/users/:id", element: <AuthorPost/>},
-      {path:"myposts/:id'", element: <Dashboard/>},
-      {path:"posts/:id/edit'", element: <EditProfile/>},
+      {path:"/posts/:id", element: <Postdetails/>},
+      {path:"/login", element: <Login/>},
+      {path:"/register", element: <Register/>},
+      {path:"/profile/:id", element: <UserProfile/>},
+      {path:"/authors", element: <Authors/>},
+      {path:"/create", element: <CreatePost/>},
+      {path:"/posts/categories/:category", element: <CategoryPosts/>},
+      {path:"/posts/users/:id", element: <AuthorPost/>},
+      {path:"/myposts/:id'", element: <Dashboard/>},
+      {path:"/posts/:id/edit'", element: <EditProfile/>},
       //Goes to any other route which we don't have
       {path:"*", element: <ErrorPage/>}
     ]
