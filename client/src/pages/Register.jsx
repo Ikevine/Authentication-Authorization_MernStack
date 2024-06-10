@@ -9,7 +9,6 @@ export default function Register() {
       [e.target.id]: e.target.value
      })
     )
-    console.log(formData);
   return (
     <div className='flex flex-col justify-between items-center w-full gap-4'>
        <h1>Sign Up</h1>

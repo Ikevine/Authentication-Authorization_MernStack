@@ -33,8 +33,8 @@ const router = createBrowserRouter([
       {path:"/create", element: <CreatePost/>},
       {path:"/posts/categories/:category", element: <CategoryPosts/>},
       {path:"/posts/users/:id", element: <AuthorPost/>},
-      {path:"/myposts/:id'", element: <Dashboard/>},
-      {path:"/posts/:id/edit'", element: <EditProfile/>},
+      {path:"/myposts/:id", element: <Dashboard/>},
+      {path:"/posts/:id/edit", element: <EditProfile/>},
       //Goes to any other route which we don't have
       {path:"*", element: <ErrorPage/>}
     ]

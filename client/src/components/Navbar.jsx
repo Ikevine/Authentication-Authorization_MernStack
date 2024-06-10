@@ -12,7 +12,7 @@ export default function Navbar() {
         </Link>
         
         <ul className='flex gap-4'>
-            <Link to='/profile'><li className=''>Ikevine</li></Link>
+            <Link to='/profile/789'><li className=''>Ikevine</li></Link>
             <Link to='/create'><li className=''>Create Post</li></Link>
             <Link to='/authors'><li className=''>Author</li></Link>
             <Link to='/logout'><li className=''>Logout</li></Link>
